@@ -1,0 +1,19 @@
+{
+  "authHost": "https://gcp.sipper.pro",
+  "authEndpoint": "/broadcasting/auth",
+  "clients": [],
+  "database": "redis",
+  "databaseConfig": {
+    "redis": {
+      "port": "6379",
+      "host": "redis"
+    }
+  },
+  "devMode": true,
+  "host": null,
+  "port": "6001",
+  "protocol": "https",
+  "socketio": {},
+  "sslCertPath": "/var/www/storage/certs/letsencrypt/gcp.sipper.pro/gcp.sipper.pro.crt",
+  "sslKeyPath": "/var/www/storage/certs/letsencrypt/gcp.sipper.pro/gcp.sipper.pro.key"
+}

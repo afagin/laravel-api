@@ -1,0 +1,57 @@
+#!/bin/bash
+echo "##########Lancement du demarrage##########";
+echo "##########Installation git / unzip##########";
+sudo apt-get --yes --force-yes install git unzip curl;
+
+git clone -b docker https://github.com/thomasbcy/sipper_api.git
+
+echo "##########Installation docker##########";
+curl -fsSL get.docker.com -o get-docker.sh
+sh get-docker.sh
+curl -s https://gist.githubusercontent.com/luislobo/2dc3de67b7f2ddc623c239dff36962a0/raw/9f24ff62eb7ada78718f5a805b54c0295c248692/install_latest_docker_compose.sh | bash /dev/stdin
+sudo docker system prune -a;
+
+echo "##########Installation PHP7.2##########";
+sudo apt-get --yes --force-yes install apt-transport-https lsb-release ca-certificates
+
+sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
+
+echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list
+
+sudo apt-get update
+#sudo apt-get --yes --force-yes purge php.*
+sudo apt-get --yes --force-yes install php7.1
+sudo apt-get --yes --force-yes install php7.1-cli
+sudo apt-get --yes --force-yes install php7.1-xml
+sudo apt-get --yes --force-yes install php7.1-mbstring
+sudo apt-get --yes --force-yes install php7.1-mysql
+sudo apt-get --yes --force-yes install php7.1-json
+sudo apt-get --yes --force-yes install php7.1-curl
+sudo apt-get --yes --force-yes install php7.1-common
+sudo apt-get --yes --force-yes install php7.1-mcrypt
+sudo apt-get --yes --force-yes install php7.1-gd
+#sudo apt-get --yes --force-yes install libapache2-mod-php7.1
+sudo apt-get --yes --force-yes install php7.1-zip
+sudo phpenmod xml
+sudo phpenmod mbstring
+sudo phpenmod mysql
+
+echo "##########Installation composer##########";
+cd sipper_api/
+php composer.phar self-update
+php composer.phar install
+
+echo "##########Lancement laradock##########";
+#Avoid already in use error.
+sudo /etc/init.d/apache2 stop
+sudo rm -r laradock/
+git clone https://github.com/laradock/laradock.git
+cd laradock;
+mv env-example .env
+cp ../build/default.apache.conf apache2/sites/default.apache.conf
+cp ../build/docker-composer.yml .
+cp ../build/Caddyfile caddy/
+cp ..build/laravel-echo-server.json /laravel-echo-server/
+sudo docker-compose up --force-recreate --build caddy redis laravel-echo-server;
+
+echo "##########Fin du demarrage##########";

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "sipper-1518351638638",
+  "private_key_id": "2b1337fcef9b28114967549c3ee3aacdc5e48d53",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCOmjEE7bOHKq7r\nJsim+6ImXlmp7f2hkSSJQ34FZSZDAu58+ZHisiO8taMHpazrnk9K03xlP5e45j67\nH6OuZ5uiOyrWpnhNCdb5YQuZeh7OTmNxItwTZRoUBaFxpEPX4CemCKLzCgfuamiX\nGNLadSCMgib+xzRxW1Is93iDV0q2CJIe3Xd0avCjUeH+i/FQqml7kVdOkc0QMV8k\ntZPRRGW/TjD8rEF7ab2a+mXVIA1I3UYicl0f8Opsray9LbrZc9hKfdFYX3sf+YE+\nc+jy3YMsU+aShgaGUncSLAh9bzNYXlbByo6FWBMSLVS1AxOsZx5qGoAfYdsQAxhq\nUJ2RoGKDAgMBAAECggEAFY0fCGgmIDDms5oua/IOnO7YbTKPCMpnM6l0E7uoLytz\nwIZ1MkYK2Zu30lGLEybfQ+c3XxPfya1eYKhU8+groLaBcGRDPR1WFGVCvAS1QCef\nprsGeJXofYsmTYbuS+NQCqs2eTWUYkdJnEA/qY1XCHUpEIsplVIgVrRlza+1FlJ2\nfsr0lEPjuhWdbbK8DEtPAt6ZjshQ6vNgawxMVRFJfolRV+rtyrJHDKbDSBUkAwVa\nMGkGeQVNhFyfjAK5OxRGOANGAvVH8oKF+ZEbYjWbl8wh2HblOkCACTs++3+d/lWo\nSG0ikdXXyH1qDglapyzgBsTxqRu+hz9VAz8hU75y/QKBgQDFSiefKhffh+k5xh1C\ntnWel/EMzR6ndTvgAbebU9c0UXvotZKhKJtohrBNWh7M61ielvxRRNlGIsLzT3xz\nuEwQciGjh7f/ONU1vwAVlkus2nKZoyiN37f+Qfy0moOhPVvLvm0zObYh2FSSCfPQ\nKwSzOOj2EHO98JsE2LuaT3ZvlwKBgQC5Cd2ZwtleAIg92kSiw4auKzFy4aes6Bdb\n//bJ0GRM2Bh1qKBIakXrV3hgSXiv7dMYHSd5ll8U2PMdLk8eRVCjBNe56W8MxFOs\nLPXMOD3+wnnbmBmXsGS6mbFEYolQbhCZxP+Vm07G60RpTdUaeQkCYScwf2e06JAr\nzE1qQugB9QKBgQC2eo1FSYDFTwdoWZcs4mjOJMlfRsYIq4WS/uOddqHBkXCjYHZc\nO5vqxVGCak28yh2wqgR9AspYdcSNmcKJojgwqe/1Oo30MdP7H0vrq5UZLv/6nQ/g\nkcG0GcKsJZKEa6VhQSPt0n5ktZwba7somvGA9616EuOLFmW7yN9UrhTkxwKBgA66\n01InKaiLAE10L5yJVhJNS+1qOy/PdfST5rBgD2vyk9fh6Yh6NUCrwOBhWOMgWnqD\n752FM+Jz9r5u7ktplyay/v1EsNtiUYrWNWbhX0YFcy/g5sClgQ89ptfbxDSL3nRv\nMy1UpKu/FL4RPRKTaf0vgLAipD3JeZiS9eKsms11AoGBAKY6X8BgTOc/VdeYNpOq\nUa9p2/tilwkgaMHlx9d5zgCwGPSaqBPHRrldW8DHNfh8YMyOO3esx+xLBjbr7L3k\nDRa5Ku2d2QJiI+h0xJxUfyZTSfpgJu7e2Rf+KbZy94pnJzymAiJKawS0j2GIIfzE\nWdhXWKkEboOcxyJiqTy61hVY\n-----END PRIVATE KEY-----\n",
+  "client_email": "sipperapp-bucket@sipper-1518351638638.iam.gserviceaccount.com",
+  "client_id": "101731087038783188915",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sipperapp-bucket%40sipper-1518351638638.iam.gserviceaccount.com"
+}
